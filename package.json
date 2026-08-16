@@ -1,0 +1,32 @@
+{
+  "name": "aws-cost-optimizer",
+  "version": "0.1.0",
+  "description": "AWS Cost Optimizer — Claude Code Plugin + HUD for automatic architecture deployment and cost governance",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "build:skill": "tsc -p skill/tsconfig.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "workspaces": [
+    "skill",
+    "mcp-server",
+    "hud"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.ts"],
+    "moduleNameMapper": {
+      "^(.*)\\.js$": "$1"
+    }
+  }
+}
