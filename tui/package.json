@@ -1,0 +1,28 @@
+{
+  "name": "@aws-cost-optimizer/tui",
+  "version": "0.1.0",
+  "description": "Terminal HUD for aws-cost-optimizer",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "aws-cost-hud": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "better-sqlite3": "^13.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "@types/blessed": "^0.1.25",
+    "@types/better-sqlite3": "^7.6.0",
+    "ts-node": "^10.9.0"
+  }
+}
