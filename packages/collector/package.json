@@ -1,0 +1,24 @@
+{
+  "name": "@aws-cost-optimizer/collector",
+  "version": "0.1.0",
+  "description": "Lambda background metrics collector for aws-cost-optimizer",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.0.0",
+    "@aws-sdk/client-cost-explorer": "^3.0.0",
+    "better-sqlite3": "^13.0.0",
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "@types/aws-lambda": "^8.10.0",
+    "@types/better-sqlite3": "^7.6.0",
+    "esbuild": "^0.21.0"
+  }
+}
